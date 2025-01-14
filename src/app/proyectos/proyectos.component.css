@@ -1,0 +1,143 @@
+.section{
+    width: 80%;
+    margin: 5em auto;
+    height: 100vh;
+}
+.text-titulo h1{
+    color: white;
+    text-align: start;
+    margin-top: 0;
+    font-size: 3em;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.section-proyectos{
+    width: 80%;
+    margin: 5em auto;
+}
+
+.container-list-proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5em;
+    margin-top: 2em;
+    width: 80%; 
+    margin: 5em auto;
+}
+
+.item-proyecto {
+    color: white;
+    border: 2px solid #404040; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    margin-top: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    opacity: 0;
+}
+
+.item-proyecto.fade-in-visible{
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.item-proyecto:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.item-proyecto:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.item-proyecto:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.item-proyecto:nth-child(4) {
+    animation-delay: 0.2s;
+}
+.item-proyecto:nth-child(5) {
+    animation-delay: 0.2s;
+}
+.item-proyecto:nth-child(6) {
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.item-proyecto:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item-proyecto p{
+    padding: 1em;
+}
+
+.header-proyecto {
+    width: 90%;
+    margin: 0 auto;
+    padding:1em;
+    border-bottom: 1px solid #404040;
+}
+
+.titulo-proyecto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo-proyecto h4{
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 1.2em;
+}
+
+.titulo-proyecto img{
+    width: 2em;
+    height: 2em;
+}
+
+.portada-proyecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada-proyecto img {
+    width: 100%;
+    height: 17em;
+}
+
+.tecnologias-utilizadas {
+    display: flex;
+    gap: 0.5em;
+}
+
+.tecnologias-utilizadas img {
+    width: 2em;
+    height: 2em;
+}
+
+@media (max-width: 768px) {
+    .section-proyectos{
+        height: auto;
+        width: 85%;
+        margin: 2em auto;
+    }
+    .container-list-proyectos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+    .portada-proyecto img{
+        height: 10em;
+    }
+}

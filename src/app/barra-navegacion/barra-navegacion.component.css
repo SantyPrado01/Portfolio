@@ -1,0 +1,86 @@
+.container {
+    width: 100%;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em 2em;
+    height: 10vh;
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+.navbar-left .logo {
+    height: 3em;
+    margin-right: 1em;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+}
+.navbar-left-text h1{
+    color: #1E90FF;
+}
+.navbar-left-text p{
+    color: white;
+}
+
+.navbar-right .nav-button {
+    margin-left: 2.5em;
+    color:white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.navbar-right .nav-button:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.menu-hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-hamburguesa span {
+    background: white;
+    border-radius: 2px;
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+    width: 25px;
+}
+
+.menu-responsive {
+    display: none;
+    flex-direction: column;
+    background-color: #000000;
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container{
+       position: static;
+       top: auto;
+       left: auto;
+    }
+    .navbar-right {
+        display: none;
+    }
+
+    .menu-hamburguesa {
+        display: flex;
+    }
+}

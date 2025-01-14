@@ -1,0 +1,29 @@
+<div class="container">
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="./assets/logo.png" alt="Logo" class="logo">
+            <div class="navbar-left-text">
+                <h1>S/P</h1>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <a href="#home" class="nav-button">Inicio</a>
+            <a href="#about" class="nav-button">Sobre Mi</a>
+            <a href="#services" class="nav-button">Proyectos</a>
+            <a href="#contact" class="nav-button">Servicios</a>
+            <a href="#contacto" class="nav-button">Contacto</a>
+        </div>
+        <div class="menu-hamburguesa" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="menu-responsive" [class.show]="menuOpen">
+        <a href="#home" class="nav-button" (click)="toggleMenu()">Inicio</a>
+        <a href="#about" class="nav-button" (click)="toggleMenu()">Sobre Mi</a>
+        <a href="#services" class="nav-button" (click)="toggleMenu()">Proyectos</a>
+        <a href="#contact" class="nav-button" (click)="toggleMenu()">Servicios</a>
+        <a href="#contacto" class="nav-button" (click)="toggleMenu()">Contacto</a>
+    </div>
+</div>

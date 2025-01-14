@@ -1,0 +1,174 @@
+
+.intro-text h6 {
+    color: #1E90FF;
+    font-size: 2em;
+    margin-block-start:0;
+    margin-block-end:0;  
+
+}
+
+.intro-text-principal h1 {
+    color: white;
+    font-size: 5em;
+    margin-block-start:0;
+    margin-block-end:0; 
+}
+
+.intro-text-detalle p {
+    color: white;
+    font-size: 1.2em;
+    margin-block-start:2em;
+    margin-block-end:0; 
+}
+
+.intro-text h6, .intro-text-principal h1, .intro-text p {
+    display: inline-block;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.text-gris{
+    color: #b4b3b3;
+}
+.text-azul{
+    color: #1E90FF;
+}
+
+.section-intro{
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro{
+    width: 50%;
+
+}
+.intro-image{
+    width: 30%;
+}
+.intro-image img{
+    width: 18em;
+    margin: 1.2em;
+}
+
+
+.section-intro-contact {
+    display: flex;
+    justify-content: start;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+
+.section-intro-contact a {
+    text-decoration: none;
+}
+
+.button-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292929; 
+    color: white;
+    border: 0.5px solid #434343; 
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 0.8em;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    width: 12em;
+}
+
+.button-contact img {
+    width: 2em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+.button-contact span {
+    display: flex;
+    align-items: center;
+}
+
+.button-contact:hover {
+    background-color: rgb(36, 36, 36); 
+    color: #ffffff; 
+    border-color: #292929; 
+}
+
+.button-contact:focus {
+    outline: none;
+}
+
+.button-contact:active {
+    background-color: #1f1f1f; 
+    border-color: #1f1f1f;
+}
+
+
+
+.parallax {
+    background-image: url('/assets/fondo1.jpg'); 
+    height: 30vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-contact {
+    background-image: url('/assets/fondo2.jpg'); 
+    height: 40vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@media (max-width: 768px) {
+    .section-intro{
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:flex-start ;
+        width: 85%;
+    }
+    .intro-text-principal h1{
+        font-size: 1.8em;
+    }
+    .intro-text-principal h6{
+        font-size: 0.8em;
+    }
+    .intro{
+        width: 100%;
+    }
+    .section-intro-contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    .parallax{
+        display: none;
+    }
+    .intro-image{
+        width: 100%;
+    }
+}
+
+
+
+
