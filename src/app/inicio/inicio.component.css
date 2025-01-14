@@ -164,6 +164,9 @@
     .parallax{
         display: none;
     }
+    .parallax-contact{
+        display: none;
+    }
     .intro-image{
         width: 100%;
     }

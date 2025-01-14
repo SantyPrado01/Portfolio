@@ -162,6 +162,7 @@
         height: auto;
         width: 85%;
         margin: 0 auto;
+        margin-top: 2em;
     }
     .container-section-sobreMi{
         flex-direction: column;
